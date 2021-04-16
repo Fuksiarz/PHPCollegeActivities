@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+</head>
+<body>
+<fieldset>
+    <form method="post" action="zad3.php" name="akcja">
+        <div><h1>REZERWACJA</h1></div>
+        <div>Na ile osób:</div>
+        <select name="ilosc">
+
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+
+        </select>
+
+        <div>
+            <div>Dane rezerwującego:</div>
+            <input type="text" placeholder="Imie" name="imie" required>
+            <input type="text" placeholder="Nazwisko" name="nazwisko" required>
+            <input type="text" placeholder="Adres" name="adres" required>
+
+
+            <input type="number" placeholder="numer karty kredytowej" name="nrKarty" required>
+
+            <input type="number" placeholder="kod CVC" name="kodCVC" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <div>Data przyjazdu:</div>
+            <input type="date" placeholder="Data przyjazdu" name="dataP" required>
+            <div>Data odjazdu:</div>
+            <input type="date" placeholder="Data odjazdu" name="dataO" required>
+            <p>Potrzebne łóżko dla dziecka?<input type="checkbox" name="dziecko"> </p>
+            <h3>Dodatkowe atrybuty(Jeśli więcej niż jeden dodajemy przyciskając CTRL):</h3>
+            <select multiple name="atrybuty">
+                <option value="popielniczka">Popielniczka</option>
+                <option value="klimatyzacja">Klimatyzacja</option>
+                <option value="lodowka">Lodówka</option>
+                <option value="mikrofala">Mikrofala</option>
+
+            </select>
+
+        </div>
+        <div>
+            <input type="submit" value="Prześlij" name="send">
+        </div>
+
+    </form>
+</fieldset>
+
+
+
+</body>
+</html>
