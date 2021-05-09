@@ -13,6 +13,11 @@ if(isset($_POST['send'])){
     }else{
         $dziecko="nie";
     }
+    if (!empty($_POST['atrybuty'])) {
+        $selected="tak";
+
+
+    }else $selected="brak";
     $fullData = array(
         $ilosc = $_POST["ilosc"] ?? "",
         $imie = $_POST["imie"] ?? "",
@@ -22,7 +27,8 @@ if(isset($_POST['send'])){
         $email = $_POST["email"] ?? "",
         $dataP = $_POST["dataP"] ?? "",
         $dataO = $_POST["dataO"] ?? "",
-        $dziecko);
+        $dziecko,
+        $selected);
     echo("
 
             <header><h1>Już wprowadzone:</h1>
@@ -41,6 +47,7 @@ if(isset($_POST['send'])){
                 <li>email: $email </li> 
                 <li>data przyjazdu: $dataP, data odjazdu:  $dataO</li>
                 <li>łóżko dla dziecka: $dziecko</li>
+                <li>dodatkowe atrybuty: $selected</li>
             </ul>
 
 ");
