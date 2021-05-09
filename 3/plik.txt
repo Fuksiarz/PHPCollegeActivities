@@ -1,0 +1,2 @@
+ imie: add nazwisko: qqq wiek: 11
+ imie: siema nazwisko: co  wiek: 11
