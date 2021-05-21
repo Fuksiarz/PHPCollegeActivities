@@ -80,21 +80,4 @@ echo("
             </body>
             </html>");
 
-echo ("<h1>Podaj dodatkowe dane:</h1>");
-if($_SESSION['ilosci']>1) {
-    for ($i = 1; $i < $_SESSION['ilosci']; $i++) {
-
-        echo("<div>Dane dodatkowego miejsca rezerwacji $i :</div><input type=\"text\" placeholder=\"Imie\" name=\"imie$i\" required>
-                    <input type=\"text\" placeholder=\"Nazwisko\" name=\"nazwisko$i\" required>
-                    <input type=\"text\" placeholder=\"Adres\" name=\"adres$i\" required></br>");
-
-
-    }
-    echo("<input type=\"submit\" value=\"Prześlij\" name=\"send\">
-            </fieldset>
-            </form>");
-
-}
-
-
 ?>
